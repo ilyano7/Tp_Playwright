@@ -1,0 +1,21 @@
+{
+  "name": "tp1",
+  "version": "1.0.0",
+  "description": "Playwright + Cucumber + TypeScript E2E tests for SauceDemo",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:report": "cucumber-js && npx ts-node src/utils/report.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.44.0",
+    "playwright": "^1.44.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,1133 @@
+[
+  {
+    "description": "  As a registered buyer\n  The checkout form must validate required fields\n  So that purchases cannot be completed with incomplete information",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-information-validation;all-checkout-fields-are-required",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "All checkout fields are required",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 496975599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 491412999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I log in with valid credentials",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109535899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the inventory page should be displayed",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19466399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I add 2 items to the cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79807698
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I go to the shopping cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20175898
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23367799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the checkout information page should be displayed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5785398
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I submit checkout information with first name \"\", last name \"Doe\" and zip \"75001\"",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66880000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see an error message \"Error: First Name is required\"",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4151298
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 212773899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          },
+          {
+            "name": "@validation",
+            "line": 1
+          },
+          {
+            "name": "@acceptance-criteria",
+            "line": 1
+          },
+          {
+            "name": "@required-fields",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-information-validation;all-checkout-fields-are-required",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "All checkout fields are required",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 303462000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 427912399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I log in with valid credentials",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93992999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the inventory page should be displayed",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8579700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I add 2 items to the cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83592298
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I go to the shopping cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22510098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23224798
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the checkout information page should be displayed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5094499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I submit checkout information with first name \"John\", last name \"\" and zip \"75001\"",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77428699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see an error message \"Error: Last Name is required\"",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10338898
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 203216699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          },
+          {
+            "name": "@validation",
+            "line": 1
+          },
+          {
+            "name": "@acceptance-criteria",
+            "line": 1
+          },
+          {
+            "name": "@required-fields",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-information-validation;all-checkout-fields-are-required",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "All checkout fields are required",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 278393900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 479466598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I log in with valid credentials",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82666499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the inventory page should be displayed",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6697399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I add 2 items to the cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65181599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I go to the shopping cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19072799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23016999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the checkout information page should be displayed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5278298
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I submit checkout information with first name \"John\", last name \"Doe\" and zip \"\"",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89764900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see an error message \"Error: Postal Code is required\"",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5334899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 180169699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          },
+          {
+            "name": "@validation",
+            "line": 1
+          },
+          {
+            "name": "@acceptance-criteria",
+            "line": 1
+          },
+          {
+            "name": "@required-fields",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-information-validation",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Checkout Information Validation",
+    "tags": [
+      {
+        "name": "@checkout",
+        "line": 1
+      },
+      {
+        "name": "@validation",
+        "line": 1
+      },
+      {
+        "name": "@acceptance-criteria",
+        "line": 1
+      }
+    ],
+    "uri": "features\\checkout-validation.feature"
+  },
+  {
+    "description": "  As a registered buyer\n  I can checkout items selected in my shopping cart\n  So that I can complete my purchase",
+    "elements": [
+      {
+        "description": "",
+        "id": "shopping-cart-checkout;successful-checkout-with-two-items-sorted-by-lowest-price",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Successful checkout with two items sorted by lowest price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 293882300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 420331100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I log in with valid credentials",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97782500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the inventory page should be displayed",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7814699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I sort products by lowest price",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14355400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the products should be sorted by price ascending",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42828498
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I add 2 items to the cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65219799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the cart badge should show 2 items",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3066799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I go to the shopping cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21210000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the cart page should be displayed",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6556098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the cart should contain the items I added",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15072999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the cart should have 2 items",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2442200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19426399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the checkout information page should be displayed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5532700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I fill in the checkout information",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53575499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I continue to the checkout overview",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26893400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the checkout overview page should be displayed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6913700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "the overview should contain the items I selected",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14532800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "the total price should be correctly calculated",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12990298
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I finish the checkout",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17373900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "the checkout complete page should be displayed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6021799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "my order should be confirmed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6427598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the shopping cart should be reset to empty",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3909300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 196297199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@happy-path",
+            "line": 12
+          },
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "shopping-cart-checkout;successful-checkout-with-three-items",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Successful checkout with three items",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 279797000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 778871000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I log in with valid credentials",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99693999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the inventory page should be displayed",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12028098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I sort products by lowest price",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10902098
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "I add 3 items to the cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107018400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "the cart badge should show 3 items",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2938299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "I go to the shopping cart",
+            "match": {
+              "location": "src\\steps\\inventory.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31364099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "the cart should have 3 items",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2849598
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "the cart should contain the items I added",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20489198
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 49,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src\\steps\\cart.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21102000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 50,
+            "name": "I fill in the checkout information",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49443899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I continue to the checkout overview",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24566499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "the overview should contain the items I selected",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24767698
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "the total price should be correctly calculated",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17255499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 55,
+            "name": "I finish the checkout",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19436499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "the checkout complete page should be displayed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4462299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "my order should be confirmed",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5003499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "the shopping cart should be reset to empty",
+            "match": {
+              "location": "src\\steps\\checkout.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3573598
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 246750700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@happy-path",
+            "line": 39
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "shopping-cart-checkout",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Shopping Cart Checkout",
+    "tags": [
+      {
+        "name": "@checkout",
+        "line": 1
+      },
+      {
+        "name": "@e2e",
+        "line": 1
+      }
+    ],
+    "uri": "features\\checkout.feature"
+  }
+]
