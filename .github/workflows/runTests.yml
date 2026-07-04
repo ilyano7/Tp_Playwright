@@ -5,6 +5,18 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag Cucumber à exécuter (ex: @checkout, @smoke, not @wip)"
+        required: false
+        default: "@smoke"
+        type: string
+
+env:
+  # Tag utilisé sur push/pull_request (déclenchement automatique).
+  # Modifie cette valeur pour changer le tag par défaut.
+  DEFAULT_TAG: "@smoke"
 
 jobs:
   test:
@@ -26,8 +38,17 @@ jobs:
       - name: Installer les navigateurs Playwright
         run: npx playwright install --with-deps
 
-      - name: Lancer les tests Playwright
-        run: npx playwright test
+      - name: Déterminer le tag à utiliser
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "value=${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=${{ env.DEFAULT_TAG }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Lancer les tests Cucumber avec Playwright
+        run: npx cucumber-js --tags "${{ steps.tag.outputs.value }}"
 
       - name: Uploader le rapport HTML
         uses: actions/upload-artifact@v4
