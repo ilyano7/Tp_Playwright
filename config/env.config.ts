@@ -1,6 +1,6 @@
 export const ENV = {
   BASE_URL: process.env.BASE_URL ?? 'https://www.saucedemo.com',
-  HEADLESS: false,
+  HEADLESS: true,
   SLOW_MO: Number(process.env.SLOW_MO ?? 2000),
   TIMEOUT: Number(process.env.TIMEOUT ?? 30_000),
 
